@@ -2,7 +2,6 @@ import moduleutils.CherryPickFinder;
 import moduleutils.ImportLib;
 import moduleutils.importLib.Util;
 import moduleutils.importLib.machinery.ModuleSpec;
-import moduleutils.sys.Modules;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +17,7 @@ class TestOneTest {
 
     private Map<String, Object> namespace;
     private ModuleSpec spec;
-    private MockedStatic<ModuleUtils> cherryPickMock;
+    private MockedStatic<CherryPickFinder> cherryPickMock;
 
     @BeforeEach
     void setUp() {
